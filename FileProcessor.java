@@ -50,23 +50,23 @@ public class FileProcessor {
 	
 		try (Scanner input = new Scanner(file)) {
 			
-			 while (input.hasNextLine()) {
+			while (input.hasNextLine()) {
 				 
-                String word = input.nextLine() ;
+                	String word = input.nextLine() ;
                 
-                if (word.length() > stringLength) {
+               		if (word.length() > stringLength) {
                 	
-                    throw problem;
-                }
-                else {
+                   		 throw problem;
+               		}
+               		else {
                 	
-                	System.out.println("File processed successfully.");	
-                }
-			 }
+                		System.out.println("File processed successfully.");	
+              	  	}
+		   	}
             
-        } 	
+        	} 	
 		catch(FileNotFoundException e) {
-		System.out.println(e.getMessage());
+			System.out.println(e.getMessage());
 			
 		}
 		catch(StringTooLongException e) {
